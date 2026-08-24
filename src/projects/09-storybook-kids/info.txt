@@ -1,0 +1,12 @@
+title: Kids Personalised Storybook
+category: Web App
+year: 2026
+tags: HTML5, CSS3, JavaScript, Multi-page
+accent: #a78bfa
+
+A guided builder that turns a child into the hero of their own printed storybook. Walks
+through choosing a character and hairstyle, uploading a reference photo with clear
+guidance on what works, entering the child's details, then confirming the order while a
+progress screen renders the cover. Includes an admin panel for tracking orders through
+personalisation, address check and print-ready. Built in vanilla HTML, CSS and JavaScript
+with no framework.

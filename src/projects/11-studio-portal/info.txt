@@ -1,0 +1,12 @@
+title: Studio Portal — Dance Studio Dashboard
+category: Dashboard App
+year: 2026
+tags: React, TypeScript, Radix UI, TanStack Query, Tailwind CSS
+accent: #8b5cf6
+
+A management portal for dance studios, built in TypeScript on Radix primitives with
+TanStack Query handling the data layer. The overview surfaces follower growth, review
+distribution, audience by city and dance style, and event volume month on month. Beyond
+it sit an events manager with calendar, RSVPs, photos and updates, and a paginated
+reviews feed. Includes OAuth callback handling, protected routing and a studio switcher
+for owners running more than one location.

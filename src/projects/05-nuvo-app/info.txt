@@ -1,0 +1,8 @@
+title: Nuvo — Money App Landing
+category: Product Landing Page
+year: 2026
+tags: React, Tailwind CSS, SVG, Vite
+featured: true
+accent: #ff3494
+
+A landing page for a personal finance app. The five phone screens are the centrepiece and none are images — balance cards, bar charts, SVG progress rings and transaction lists are all real DOM inside a device shell. They stay sharp at any size and changing a figure is a one-line edit, which is why this ships 408 KB where a comparable build needed 2.5 MB.

@@ -1,0 +1,7 @@
+title: Vance & Thornbury — Attorneys at Law
+category: Business Website
+year: 2026
+tags: React, React Router, Tailwind CSS, SVG, Vite
+accent: #b89b5e
+
+A navy-and-gold law firm site across eleven routes, including per-attorney and per-practice-area detail pages. The emblem is drawn in code and the caseload donut is SVG built from stroke-dasharray segments sized by share of total. Unknown slugs render their own not-found states rather than falling through to the global 404.

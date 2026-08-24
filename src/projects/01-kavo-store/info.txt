@@ -1,0 +1,8 @@
+title: Kavo — Multipurpose Storefront
+category: E-Commerce
+year: 2026
+tags: React, React Router, Tailwind CSS, Context API, Vite
+featured: true
+accent: #e53e3e
+
+Three storefront designs — fashion, grocery and furniture — from one React codebase. A single attribute on the layout wrapper swaps the entire palette via CSS custom properties, so the cart, product cards and footer are written once and render in all three schemes. Cart state sits above the router, so a basket survives jumping between storefronts.

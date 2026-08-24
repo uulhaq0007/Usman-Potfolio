@@ -1,0 +1,11 @@
+title: Nazli Trading — Vehicle Export Platform
+category: UI Design
+year: 2026
+tags: UI Design, Dashboard, Data Tables, Figma
+accent: #dc2626
+
+Interface design for a Japanese used-vehicle export business — sourcing at auction in
+Japan and shipping to buyers in Bangladesh, Malaysia and the UK. Covers the purchase
+ledger, a consolidated shipment report, letter-of-credit entry and three separate sales
+channels, built around dense tables carrying chassis numbers, auction houses, ports of
+loading and discharge, and yen totals. Design only — no build.

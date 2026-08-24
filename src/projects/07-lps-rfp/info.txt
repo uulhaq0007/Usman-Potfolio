@@ -1,0 +1,11 @@
+title: RFP Pro — Vendor Response Platform
+category: Dashboard App
+year: 2026
+tags: React, Material UI, Recharts, React Router, Vite
+accent: #2563eb
+
+An internal tool for managing responses to requests for proposal, built on Material UI
+with a persistent sidebar shell and a full light/dark theme. Covers an overview dashboard
+with live metrics and charts, a project tracker with per-response progress, a sectioned
+proposal composer, plus template, knowledge base and resource libraries — every screen
+captured in both themes.

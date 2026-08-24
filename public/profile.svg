@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 480" fill="none">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#a3e635" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#a3e635" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ab32a"/>
+      <stop offset="1" stop-color="#557d18"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc09a"/>
+      <stop offset="1" stop-color="#d9a47e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- glow -->
+  <circle cx="210" cy="200" r="200" fill="url(#halo)"/>
+
+  <!-- shoulders / sweater -->
+  <path d="M40 480 C40 360 120 330 210 330 C300 330 380 360 380 480 Z" fill="url(#sweater)"/>
+  <!-- sweater collar / scarf -->
+  <path d="M150 338 C170 372 250 372 270 338 C262 360 158 360 150 338 Z" fill="#9aa6a0"/>
+  <path d="M168 332 L210 372 L252 332 C240 352 180 352 168 332 Z" fill="#46690f"/>
+
+  <!-- crossed arms -->
+  <path d="M70 470 C70 410 130 392 210 430 C290 392 350 410 350 470 Z" fill="#6ba024"/>
+  <rect x="92" y="436" width="236" height="34" rx="17" fill="#5c8a1d"/>
+
+  <!-- neck -->
+  <rect x="182" y="280" width="56" height="72" rx="26" fill="#d9a47e"/>
+
+  <!-- beard base -->
+  <ellipse cx="210" cy="212" rx="92" ry="98" fill="#2a2a28"/>
+  <!-- face -->
+  <ellipse cx="210" cy="186" rx="74" ry="82" fill="url(#skin)"/>
+  <!-- ears -->
+  <circle cx="138" cy="196" r="14" fill="#d9a47e"/>
+  <circle cx="282" cy="196" r="14" fill="#d9a47e"/>
+  <!-- beard over jaw -->
+  <path d="M138 196 C140 268 180 300 210 300 C240 300 280 268 282 196
+           C282 246 250 262 210 262 C170 262 138 246 138 196 Z" fill="#2a2a28"/>
+  <path d="M168 250 C180 280 240 280 252 250 C246 282 174 282 168 250 Z" fill="#1f1f1d"/>
+  <!-- moustache -->
+  <path d="M182 222 C196 232 224 232 238 222 C232 236 188 236 182 222 Z" fill="#2a2a28"/>
+
+  <!-- glasses -->
+  <g stroke="#15170f" stroke-width="6" fill="rgba(190,242,100,0.10)">
+    <rect x="150" y="172" width="52" height="40" rx="14"/>
+    <rect x="218" y="172" width="52" height="40" rx="14"/>
+  </g>
+  <path d="M202 190 H218" stroke="#15170f" stroke-width="6"/>
+  <path d="M150 188 H132" stroke="#15170f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M270 188 H288" stroke="#15170f" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- hat -->
+  <path d="M120 150 C120 96 160 70 210 70 C260 70 300 96 300 150
+           C300 158 296 162 286 162 L134 162 C124 162 120 158 120 150 Z" fill="#23241f"/>
+  <path d="M104 158 C104 146 150 138 210 138 C270 138 316 146 316 158
+           C316 170 270 176 210 176 C150 176 104 170 104 158 Z" fill="#2c2d27"/>
+  <path d="M120 150 C120 110 160 92 210 92 C260 92 300 110 300 150 C290 124 256 112 210 112 C164 112 130 124 120 150 Z" fill="#1a1b16"/>
+</svg>

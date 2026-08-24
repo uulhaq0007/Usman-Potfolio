@@ -1,0 +1,7 @@
+title: Yorker Cricket Club
+category: Sports & Community
+year: 2026
+tags: React, React Router, Tailwind CSS, Vite
+accent: #d94f2b
+
+A cricket club site covering fixtures, a sortable league table, squad profiles and match reports. One card component handles both upcoming fixtures and finished results, switching between a countdown and a scoreline. Club crests are drawn as SVG components — the licensed photo pool for cricket is almost all identifiable professionals, so casting them as a fictional squad was off the table.

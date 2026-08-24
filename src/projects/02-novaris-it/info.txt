@@ -1,0 +1,7 @@
+title: Novaris — IT Consultancy
+category: Business Website
+year: 2026
+tags: React, React Router, Tailwind CSS, Vite
+accent: #086ad7
+
+A ten-page consultancy site with an original identity, hand-drawn SVG icon set and custom-built interaction — hero carousel, rAF-driven counters, filterable case studies and a pricing toggle. Scroll reveals use a hardened observer hook that also checks the element rect on mount, so an anchor jump can never strand a section at zero opacity.

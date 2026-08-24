@@ -1,0 +1,7 @@
+title: Cirro — Vape Hardware Storefront
+category: E-Commerce
+year: 2026
+tags: React, Tailwind CSS, SVG Filters, Vite
+accent: #fd6c03
+
+A dark storefront for age-restricted retail, with the compliance requirements built as real features: a working age gate, no health claims, and descriptive product naming. Devices are illustrated as eight vector silhouettes since photography would have meant depicting real manufacturers' hardware. Section backdrops generate volumetric smoke in-browser with SVG feTurbulence, at zero image cost.

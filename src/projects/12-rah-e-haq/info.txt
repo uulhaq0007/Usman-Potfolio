@@ -1,0 +1,14 @@
+title: Rah-E-Haq — NGO Donation Platform
+category: Full-Stack
+year: 2026
+tags: React, Express, MongoDB, Tailwind CSS, JWT, i18n
+featured: true
+accent: #10a758
+
+A donation and volunteer platform for a welfare NGO, running entirely on local
+infrastructure — own MongoDB, uploads written to disk, no cloud service contacted at
+runtime. Donors submit payment screenshots that an admin verifies before they count
+toward totals; volunteers apply through a three-step form; a Zakat calculator works out
+nisab server-side from configurable gold and silver rates. The six-tab admin panel covers
+donations, volunteers, messages, site settings and homepage content. Every page ships in
+English and Urdu with full RTL and a Nastaliq face, plus light and dark themes.

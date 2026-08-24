@@ -1,0 +1,11 @@
+title: MineMakeup — Beauty Marketplace
+category: Full-Stack
+year: 2026
+tags: React, Tailwind CSS, Express, MongoDB, JWT
+accent: #ec4899
+
+A multi-seller beauty marketplace where independent brands list their own products.
+React and Tailwind on the front, Express and MongoDB behind it, with JWT auth splitting
+shoppers from sellers — buyers get browsing, cart and order history, sellers get a
+dashboard for listing and stock. Includes category filtering, search, sorting, sold-out
+handling and protected routes that redirect unauthenticated visitors to sign-in.
