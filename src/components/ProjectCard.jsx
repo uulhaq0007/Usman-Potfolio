@@ -1,11 +1,13 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+const MotionLink = motion.create(Link);
+
 // Glass project card with pointer-driven 3D tilt + sheen.
-// Clicking the card opens the project's image gallery via `onOpen`.
-export default function ProjectCard({ project, index = 0, onOpen }) {
+// The card is a link to the project's page, /projects/<slug>.
+export default function ProjectCard({ project, index = 0 }) {
   const ref = useRef(null);
-  const open = () => onOpen?.(project);
 
   const onMove = (e) => {
     const el = ref.current;
@@ -27,21 +29,13 @@ export default function ProjectCard({ project, index = 0, onOpen }) {
   };
 
   return (
-    <motion.article
+    <MotionLink
       ref={ref}
+      to={`/projects/${project.slug}`}
       className='project-card glass tilt'
       style={{ "--accent": project.accent }}
       onPointerMove={onMove}
       onPointerLeave={reset}
-      onClick={open}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          open();
-        }
-      }}
-      role='button'
-      tabIndex={0}
       aria-label={`${project.title} — view gallery`}
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -154,6 +148,6 @@ export default function ProjectCard({ project, index = 0, onOpen }) {
           )}
         </div>
       </div>
-    </motion.article>
+    </MotionLink>
   );
 }

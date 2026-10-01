@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 const links = [
-  { label: "HOME", href: "#top" },
-  { label: "ABOUT", href: "#about" },
-  { label: "PROJECT", href: "#work" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "HOME", href: "/#top" },
+  { label: "ABOUT", href: "/#about" },
+  { label: "PROJECT", href: "/#work" },
+  { label: "CONTACT", href: "/#contact" },
 ];
 
 export default function Footer() {
   return (
     <footer className='footer'>
       <div className='container footer__inner'>
-        <a
-          href='#top'
+        <Link
+          to='/#top'
           className='footer__brand'
           aria-label='Usman — home'>
           {/* <span className="nav__mark">
@@ -20,12 +22,12 @@ export default function Footer() {
               <path d="M8.5 14 H15.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
             </svg>
           </span> */}
-        </a>
+        </Link>
 
         <ul className='footer__links'>
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href}>{l.label}</a>
+              <Link to={l.href}>{l.label}</Link>
             </li>
           ))}
         </ul>

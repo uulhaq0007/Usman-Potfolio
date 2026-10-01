@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
+// Sections live on the home page, so links are "/#id" and work from any page.
 const links = [
-  { label: "HOME", href: "#top", id: "top" },
-  { label: "ABOUT", href: "#about", id: "about" },
-  { label: "PROJECT", href: "#work", id: "work" },
-  { label: "CONTACT", href: "#contact", id: "contact" },
+  { label: "HOME", href: "/#top", id: "top" },
+  { label: "ABOUT", href: "/#about", id: "about" },
+  { label: "PROJECT", href: "/#work", id: "work" },
+  { label: "CONTACT", href: "/#contact", id: "contact" },
 ];
 
 export default function Navbar() {
+  const onHome = useLocation().pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("top");
@@ -21,7 +24,12 @@ export default function Navbar() {
   }, []);
 
   // scroll-spy: highlight the link of the section in view
+  // (a project page has no sections — keep PROJECT highlighted there)
   useEffect(() => {
+    if (!onHome) {
+      setActive("work");
+      return;
+    }
     const sections = links
       .map((l) => document.getElementById(l.id))
       .filter(Boolean);
@@ -35,7 +43,7 @@ export default function Navbar() {
     );
     sections.forEach((s) => obs.observe(s));
     return () => obs.disconnect();
-  }, []);
+  }, [onHome]);
 
   return (
     <motion.header
@@ -57,8 +65,8 @@ export default function Navbar() {
         <ul className={`nav__links ${open ? "is-open" : ""}`}>
           {links.map((l) => (
             <li key={l.href}>
-              <a
-                href={l.href}
+              <Link
+                to={l.href}
                 className={active === l.id ? "is-active" : ""}
                 onClick={() => setOpen(false)}>
                 {active === l.id && (
@@ -68,7 +76,7 @@ export default function Navbar() {
                   />
                 )}
                 <span className='nav__label'>{l.label}</span>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

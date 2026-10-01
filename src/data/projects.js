@@ -49,6 +49,15 @@ const prettyTitle = (folder) =>
     .replace(/\b\w/g, (c) => c.toUpperCase())
     .trim();
 
+// URL name for the project page: the folder without its ordering prefix,
+// "01-kavo-store" → "kavo-store"  →  /projects/kavo-store
+const slugOf = (folder) =>
+  folder
+    .replace(/^\d+[-_.\s]*/, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || folder;
+
 const isTruthy = (v) => /^(true|yes|1|on)$/i.test((v || "").trim());
 
 // "/projects/foo/home-page.png" → "Home Page" (filename, no extension, prettified)
@@ -116,6 +125,7 @@ export const projects = folders.map((folder, idx) => {
 
   return {
     id: folder,
+    slug: slugOf(folder),
     title: meta.title || prettyTitle(folder),
     category: meta.category || "Project",
     year: meta.year || "",

@@ -10,7 +10,9 @@ HOW TO ADD A PROJECT
 2. Drop your IMAGES into that folder (any of: jpg, jpeg, png, webp, avif, gif, svg).
    - The image named "cover.*" is used as the card thumbnail.
    - If there's no "cover", the first image (alphabetical) is used.
-   - CLICKING the card opens a gallery showing every image in the folder.
+   - CLICKING the card opens the project's own page, showing every image in
+     the folder. The page URL comes from the folder name without the number:
+     "01-my-project" → /projects/my-project
      Each picture is captioned with its file name (e.g. "dashboard-view.png"
      shows as "Dashboard View"), so name your files how you want them labelled.
 
