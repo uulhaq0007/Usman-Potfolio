@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 
 const facts = [
@@ -41,11 +42,11 @@ export default function About() {
             ))}
           </div>
 
-          <a
-            href='#contact'
+          <Link
+            to='/#contact'
             className='btn btn-primary about__btn'>
             Hire me
-          </a>
+          </Link>
         </Reveal>
 
         <Reveal

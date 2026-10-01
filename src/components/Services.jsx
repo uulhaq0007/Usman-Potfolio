@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { services } from '../data/services'
 import Reveal from './Reveal'
 
@@ -44,13 +45,13 @@ export default function Services() {
               </span>
               <h3 className="services__title">{s.title}</h3>
               <p className="services__blurb">{s.blurb}</p>
-              <a href="#work" className="services__more">
+              <Link to="/#work" className="services__more">
                 Learn more
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2"
                     strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </a>
+              </Link>
             </Reveal>
           ))}
         </div>

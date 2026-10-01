@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const container = {
@@ -73,16 +74,16 @@ export default function Hero() {
             <motion.div
               className='hero__actions'
               variants={item}>
-              <a
-                href='#about'
+              <Link
+                to='/#about'
                 className='btn btn-outline'>
                 About me
-              </a>
-              <a
-                href='#work'
+              </Link>
+              <Link
+                to='/#work'
                 className='btn btn-primary'>
                 View work
-              </a>
+              </Link>
             </motion.div>
           </div>
         </motion.div>
